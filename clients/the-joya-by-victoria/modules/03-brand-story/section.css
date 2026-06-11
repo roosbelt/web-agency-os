@@ -1,0 +1,10 @@
+.wao-the-joya__story-grid { display: grid; gap: 3rem; }
+.wao-the-joya__media--story { aspect-ratio: 4 / 5; background: linear-gradient(155deg, #50463d, #1f1a16); color: var(--joya-canvas); }
+.wao-the-joya__media--story small { color: #c9bdae; }
+.wao-the-joya__story-copy { align-self: center; }
+.wao-the-joya__story-copy > p:not(.wao-the-joya__eyebrow) { color: #c9bdae; margin-top: 1.2rem; max-width: 55ch; }
+.wao-the-joya__story-copy blockquote { border-left: 1px solid var(--joya-gold); color: #e9ded1; font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; margin-top: 2rem; padding-left: 1.25rem; }
+.wao-the-joya__story-facts { border-top: 1px solid rgba(255,255,255,.2); margin-top: 2rem; }
+.wao-the-joya__story-facts p { border-bottom: 1px solid rgba(255,255,255,.15); color: #c9bdae; font-size: .72rem; padding-block: .8rem; }
+.wao-the-joya__story-facts span { color: var(--joya-gold); display: inline-block; font-family: ui-monospace, monospace; margin-right: 1rem; }
+@media (min-width: 64rem) { .wao-the-joya__story-grid { grid-template-columns: minmax(20rem,.8fr) minmax(0,1.2fr); gap: clamp(4rem,10vw,10rem); } }

@@ -1,0 +1,8 @@
+.wao-the-joya__faq-grid { display: grid; gap: 2.5rem; }
+.wao-the-joya__faq-grid > div:first-child > p:last-child { color: var(--joya-muted); margin-top: 1rem; max-width: 45ch; }
+.wao-the-joya__faq-list { border-top: 1px solid var(--joya-line); }
+.wao-the-joya__faq-list details { border-bottom: 1px solid var(--joya-line); padding-block: 1.15rem; }
+.wao-the-joya__faq-list summary { cursor: pointer; font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; padding-right: 2rem; }
+.wao-the-joya__faq-list details[open] summary { color: var(--joya-gold); }
+.wao-the-joya__faq-list p { color: var(--joya-muted); font-size: .86rem; margin-top: .8rem; max-width: 58ch; }
+@media (min-width: 64rem) { .wao-the-joya__faq-grid { grid-template-columns: minmax(18rem,.7fr) minmax(0,1.3fr); gap: clamp(4rem,10vw,10rem); } }
