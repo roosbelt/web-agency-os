@@ -143,3 +143,12 @@ Los [Industry Playbooks](playbooks/industries/README.md) adaptan el sistema a la
 4. Antes de marcar Client-ready o Publish-ready, cumple tanto los criterios generales como los criterios específicos de la industria.
 
 Los playbooks no autorizan claims, certificaciones, disponibilidad, resultados ni políticas. Todo dato sensible continúa sujeto a evidencia y a las puertas del Agent Performance System.
+
+## Dashboard automático desde `clients/`
+
+El dashboard raíz se genera en build-time escaneando todas las carpetas válidas dentro de `clients/`. El script `scripts/generate-dashboard.mjs` detecta previews, HTML/CSS de WordPress, exports, reportes y scorecards; después regenera un `index.html` estático con métricas, readiness, bloqueadores y únicamente enlaces a archivos existentes.
+
+- Ejecuta `npm run build` o `npm run generate:dashboard` para actualizar el dashboard localmente.
+- Después de crear y mergear un cliente, Vercel puede ejecutar `npm run build` durante el deploy y el nuevo workspace aparecerá automáticamente.
+- La generación no usa API keys, backend, base de datos, frameworks, dependencias externas ni fetch runtime obligatorio.
+- `index.html` y `styles.css` continúan siendo el output estático servido por Vercel.
