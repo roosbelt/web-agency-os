@@ -8,7 +8,7 @@ Prototipo completo para revisión, todavía **no publicable**. Fotografías, cat
 - `style.css`: estilos base más los seis módulos, siempre encapsulados bajo `.wao-the-joya`.
 - `preview.html`: documento local completo que carga `style.css`.
 - `modules-manifest.md`: orden, objetivo y dependencias de cada módulo.
-- `assets/image-links.md` y `assets/image-map.json`: registro de URLs, alt text y permisos.
+- `assets/image-links.md` y `assets/image-map.json`: registro de URLs demo, fuentes/licencias, alt text y reemplazos requeridos.
 - `references/`: referencias sugeridas y adaptación original documentada.
 
 ## Instalación completa
@@ -16,7 +16,7 @@ Prototipo completo para revisión, todavía **no publicable**. Fotografías, cat
 2. Pegar `wordpress-body.html` completo en un bloque HTML personalizado.
 3. Añadir `style.css` al mecanismo CSS aprobado del tema o editor.
 4. No eliminar ni renombrar `.wao-the-joya`.
-5. Sustituir placeholders y CTA únicamente con datos aprobados.
+5. Sustituir placeholders, imágenes demo y CTA únicamente con datos y activos aprobados.
 6. Probar móvil, tablet, desktop, teclado y reducción de movimiento antes de publicar.
 
 ## Instalación por módulo

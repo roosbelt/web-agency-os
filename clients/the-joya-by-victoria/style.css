@@ -24,6 +24,9 @@
 .wao-the-joya a:focus-visible, .wao-the-joya summary:focus-visible { outline: 2px solid var(--joya-gold); outline-offset: 4px; }
 .wao-the-joya__skip-link { background: var(--joya-paper); left: 1rem; padding: .65rem 1rem; position: fixed; top: -5rem; z-index: 20; }
 .wao-the-joya__skip-link:focus { top: 1rem; }
+.wao-the-joya__demo-banner { align-items: center; background: #221c17; color: var(--joya-canvas); display: flex; flex-direction: column; font-size: .68rem; gap: .2rem; letter-spacing: .04em; padding: .65rem 1rem; text-align: center; }
+.wao-the-joya__demo-banner strong { color: #d7b786; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; }
+.wao-the-joya__demo-banner span { color: #c9bdae; }
 .wao-the-joya__container { margin-inline: auto; max-width: 82rem; padding-inline: clamp(1.15rem, 4vw, 3.5rem); width: 100%; }
 .wao-the-joya__header { background: rgba(245, 240, 232, .94); border-bottom: 1px solid var(--joya-line); position: sticky; top: 0; z-index: 10; }
 .wao-the-joya__nav-layout { align-items: center; display: flex; gap: 1rem; justify-content: space-between; min-height: 4.5rem; }
@@ -45,7 +48,7 @@
 .wao-the-joya__note { color: var(--joya-muted); font-size: .72rem; margin-top: 1rem; max-width: 55ch; }
 .wao-the-joya__media { align-items: center; background: linear-gradient(145deg, #ded1c0, #f1e9df); border: 1px solid rgba(170, 131, 83, .35); display: flex; flex-direction: column; justify-content: center; overflow: hidden; padding: 1.25rem; position: relative; text-align: center; }
 .wao-the-joya__media::before { border: 1px solid rgba(255,255,255,.5); content: ""; inset: .65rem; pointer-events: none; position: absolute; }
-.wao-the-joya__media img { height: 100%; inset: 0; object-fit: cover; position: absolute; transition: transform .55s ease; width: 100%; }
+.wao-the-joya__media img { color: transparent; height: 100%; inset: 0; object-fit: cover; position: absolute; transition: transform .55s ease; width: 100%; }
 .wao-the-joya__media-index { font-size: .58rem; left: 1.2rem; letter-spacing: .16em; position: absolute; text-transform: uppercase; top: 1.1rem; }
 .wao-the-joya__media-mark { border: 1px solid var(--joya-gold); border-radius: 50%; display: block; height: 5rem; margin-bottom: 1.2rem; position: relative; transform: rotate(45deg); width: 5rem; }
 .wao-the-joya__media-mark::after { border: 1px solid var(--joya-gold); content: ""; inset: .7rem; position: absolute; }

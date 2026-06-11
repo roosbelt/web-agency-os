@@ -21,7 +21,8 @@
 | IDs únicos y enlaces internos existentes | Aprobado |
 | Seis módulos presentes y ensamblados en orden | Aprobado |
 | `image-map.json` válido con siete slots requeridos | Aprobado |
-| URLs vacías no producen imágenes rotas | Aprobado: placeholders visibles |
+| Preview demo carga seis imágenes públicas; `brand_texture` queda registrada | Aprobado para revisión |
+| `wordpress-body.html` conserva placeholders sin URLs demo | Aprobado |
 | Sin JavaScript obligatorio ni dependencias externas | Aprobado |
 | `prefers-reduced-motion` presente | Aprobado |
 | Responsive a 390px, 768px y 1440px | Aprobado para revisión |
@@ -34,9 +35,9 @@
 - Foco visible preservado para enlaces y controles.
 
 ## Imágenes y placeholders
-- `assets/image-map.json` conserva URLs vacías hasta recibir activos aprobados.
-- Todos los slots tienen placeholders con proporción estable y etiqueta accesible.
-- No se incluyen imágenes de referencia, externas o no autorizadas.
+- `assets/image-map.json` registra siete URLs demo de Wikimedia Commons identificadas como CC0 o dominio público; deben reemplazarse antes de publicar.
+- `preview.html` carga seis recursos demo con aviso visible, alt text explícito y lazy loading fuera del hero.
+- `wordpress-body.html` mantiene placeholders premium sin URLs externas para evitar publicar el demo accidentalmente.
 - Antes de publicar, cada imagen real requiere URL estable, permiso, dimensiones y alt text aprobado.
 
 ## Bloqueadores de publicación

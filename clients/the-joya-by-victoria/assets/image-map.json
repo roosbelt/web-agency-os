@@ -1,9 +1,9 @@
 {
-  "hero_campaign": "",
-  "product_01": "",
-  "product_02": "",
-  "product_03": "",
-  "brand_founder": "",
-  "brand_texture": "",
-  "final_cta": ""
+  "hero_campaign": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Necklace_with_Filigree_and_Beads_MET_DP233244.jpg",
+  "product_01": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Ring_MET_sf48-154-10c.jpg",
+  "product_02": "https://upload.wikimedia.org/wikipedia/commons/d/df/Finger_Ring_LACMA_M.76.174.298.jpg",
+  "product_03": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Necklace_LACMA_M.85.286.6.jpg",
+  "brand_founder": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Jewelry_ring_necklaces.jpg",
+  "brand_texture": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Necklace_1.jpg",
+  "final_cta": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Necklace_1.jpg"
 }
