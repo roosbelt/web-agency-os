@@ -1,63 +1,48 @@
-# Instrucciones WordPress — The Joya by Victoria
+# Instrucciones WordPress — The Joya by Victoria modular
 
-## Estado de esta entrega
-Esta implementación es un **prototipo frontend no publicable todavía**. Presenta placeholders honestos porque catálogo, fotografías, datos de producto, canal de WhatsApp, condiciones comerciales y textos legales siguen por confirmar. No solicitar indexación ni publicar hasta completar las sustituciones y el QA final.
+## Estado
+Prototipo completo para revisión, todavía **no publicable**. Fotografías, catálogo, historia, datos comerciales, WhatsApp y políticas siguen por confirmar. Los placeholders son intencionales y evitan presentar información inventada o imágenes rotas.
 
-## Archivos
-- `wordpress-body.html`: contenido semántico listo para pegar en un bloque de HTML personalizado. No incluye documento completo, scripts, estilos inline ni recursos externos.
-- `style.css`: estilos mobile-first encapsulados bajo la clase raíz única `.wao-the-joya`.
-- `preview.html`: documento local para revisar la composición; enlaza `style.css` y contiene exactamente el mismo body entregable.
+## Archivos finales
+- `wordpress-body.html`: body ensamblado con cabecera, seis módulos y footer dentro de `.wao-the-joya`.
+- `style.css`: estilos base más los seis módulos, siempre encapsulados bajo `.wao-the-joya`.
+- `preview.html`: documento local completo que carga `style.css`.
+- `modules-manifest.md`: orden, objetivo y dependencias de cada módulo.
+- `assets/image-links.md` y `assets/image-map.json`: registro de URLs, alt text y permisos.
+- `references/`: referencias sugeridas y adaptación original documentada.
 
-## Publicación en WordPress
-1. Crea una página nueva en borrador y evita su indexación mientras conserve placeholders.
-2. Añade un bloque de **HTML personalizado** y pega todo el contenido de `wordpress-body.html`, incluida la raíz `<div class="wao-the-joya">`.
-3. Añade el contenido completo de `style.css` al mecanismo CSS aprobado del sitio: CSS adicional del tema, hoja del child theme o campo CSS global del editor.
-4. No elimines ni renombres `.wao-the-joya`: es el límite que evita conflictos con el tema y otros plugins.
-5. Sustituye placeholders, valida todos los enlaces y configura los metadatos SEO aprobados.
-6. Previsualiza en móvil, tablet y escritorio antes de publicar.
+## Instalación completa
+1. Crear una página WordPress en borrador y mantenerla sin indexar.
+2. Pegar `wordpress-body.html` completo en un bloque HTML personalizado.
+3. Añadir `style.css` al mecanismo CSS aprobado del tema o editor.
+4. No eliminar ni renombrar `.wao-the-joya`.
+5. Sustituir placeholders y CTA únicamente con datos aprobados.
+6. Probar móvil, tablet, desktop, teclado y reducción de movimiento antes de publicar.
 
-## WhatsApp: sustitución segura obligatoria
-Los CTA actuales son estados **no interactivos** y no contienen número ni URL inventados. Para habilitarlos:
+## Instalación por módulo
+Cada `modules/<módulo>/section.html` puede copiarse dentro de una raíz `.wao-the-joya`. Añadir también sus reglas `section.css` y conservar los estilos base de `style.css`. Revisar `modules-manifest.md` antes de cambiar orden, IDs o enlaces internos.
 
-1. Confirma por escrito el número oficial, enlace completo, mensaje precargado, responsable, horario, tiempo esperado de respuesta y tratamiento de datos.
-2. Sustituye cada `<span ... aria-disabled="true">...</span>` asociado a WhatsApp por un enlace real, por ejemplo con la misma clase visual: `<a class="wao-the-joya__button" href="URL_OFICIAL_APROBADA">Consultar por WhatsApp</a>`.
-3. Si abre un servicio externo, añade microcopy visible que lo indique. Valida el destino en móvil y escritorio.
-4. Personaliza consultas por pieza solo cuando cada pieza tenga nombre o referencia real y aprobada.
-5. Si el canal deja de estar disponible, restaura un estado informativo no interactivo; nunca dejes un enlace roto o engañoso.
+## Sustituir un placeholder por imagen URL
+1. Confirmar propiedad o permiso y registrar URL/alt en `assets/image-links.md` y `assets/image-map.json`.
+2. Reemplazar el `<div class="wao-the-joya__media ..." role="img" ...>` por un contenedor equivalente con `<img src="URL_APROBADA" alt="ALT_APROBADO" width="..." height="..." loading="lazy">`.
+3. Para el hero, decidir si se omite `loading="lazy"` por ser el recurso principal.
+4. Añadir una regla encapsulada para que la imagen cubra el contenedor (`width`, `height`, `object-fit`) y conservar la proporción.
+5. Si la URL falla, restaurar el placeholder; no publicar imágenes rotas.
 
-## Sustituciones requeridas antes de publicar
-- [ ] Reemplazar la marca textual por logotipo solo si existe un archivo aprobado y con derechos de uso.
-- [ ] Sustituir los cinco campos visuales por fotografías propias o licenciadas; añadir dimensiones y `alt` literal aprobado según cada imagen.
-- [ ] Sustituir las tres tarjetas de muestra por piezas reales con nombre, categoría, descripción, materiales, medidas, precio/moneda y disponibilidad confirmados.
-- [ ] Decidir si se publicará precio o consulta; no ocultar información esencial sin una decisión comercial aprobada.
-- [ ] Reescribir el bloque de marca con historia, visión y origen verificables o retirarlo si no existe contenido aprobado.
-- [ ] Confirmar el proceso real de consulta o compra, pagos, entregas, cambios, devoluciones, garantías y cuidado.
-- [ ] Configurar el enlace oficial de WhatsApp siguiendo el procedimiento anterior.
-- [ ] Añadir correo, mercado, horario y páginas legales únicamente cuando estén aprobados.
-- [ ] Sustituir año de copyright y revisar idioma/variante regional.
-- [ ] Confirmar title, meta description, slug, canonical e indexabilidad en el plugin SEO o ajustes de WordPress.
-- [ ] Mantener fuera de esta web afiliados, productos de terceros, outfits y perfiles externos asociados a esas actividades.
+## Efectos y accesibilidad
+- Los efectos son mejoras progresivas CSS: la página funciona sin JavaScript.
+- No retirar `:focus-visible`, controles nativos de FAQ ni `prefers-reduced-motion`.
+- No aumentar zoom, duración o glow sin revisar legibilidad, rendimiento y sobriedad.
+- No ocultar información esencial detrás de hover o animación.
 
-## Edición de contenido sin romper la implementación
-- Conserva un único `h1`; usa `h2` para secciones y `h3` para piezas, pasos o preguntas.
-- Conserva el orden del DOM para que la lectura sin CSS siga siendo lógica.
-- No añadas estilos inline ni selectores globales. Todo selector nuevo debe comenzar por `.wao-the-joya`.
-- Para imágenes reales, reemplaza el `<div role="img">` correspondiente por `<img>` con `src`, `width`, `height` y `alt` verificados; conserva la clase exterior o adapta una clase encapsulada.
-- No conviertas un estado pendiente en acción hasta que su destino exista y haya sido probado.
-- No añadas scripts, sliders, popups o dependencias externas sin necesidad validada y una nueva revisión de accesibilidad/rendimiento.
-
-## Verificación posterior a integración
-- [ ] La raíz `.wao-the-joya` está presente y los estilos no afectan otras páginas.
-- [ ] No quedan placeholders, textos “por confirmar” ni estados no operativos en una página pública.
-- [ ] Todos los enlaces internos, CTA, imágenes y páginas legales funcionan.
-- [ ] Existe un único H1 y la jerarquía de encabezados es lógica.
-- [ ] Navegación, enlaces, CTA y FAQ funcionan con teclado y muestran foco visible.
-- [ ] Contraste y textos alternativos fueron revisados con los activos finales.
-- [ ] No hay overflow horizontal a 320, 375, 768, 1024 y 1440 px; el zoom/reflow al 400% conserva contenido y acciones.
-- [ ] La página funciona sin JavaScript y respeta `prefers-reduced-motion`.
-- [ ] Title, meta description, canonical e indexabilidad están configurados.
-- [ ] Cachés del sitio/CDN fueron purgadas si aplica.
-- [ ] Un QA final aprobó publicación sin bloqueadores.
+## Bloqueadores antes de publicar
+- [ ] Fotografías propias/autorizadas, URLs estables, dimensiones y alt text final.
+- [ ] Nombres, descripciones, materiales, medidas, precios y disponibilidad reales.
+- [ ] Historia y atributos verificables de la marca.
+- [ ] WhatsApp oficial, mensaje, horario y responsable.
+- [ ] Flujo real de compra/consulta, pagos, envíos, cambios y devoluciones.
+- [ ] Mercado, moneda, datos legales, privacidad e indexación.
+- [ ] Revisión final de contraste, responsive, enlaces y permisos.
 
 ## Mantenimiento
-Mantén `wordpress-body.html`, `style.css` y `preview.html` sincronizados después de cualquier cambio. Registra en `quality-report.md` toda modificación que altere copy, enlaces, datos comerciales, estructura, contraste o comportamiento responsive.
+Después de editar un módulo, sincronizar `wordpress-body.html`, `style.css` y `preview.html`. Registrar cualquier cambio funcional o comercial en `quality-report.md`.
