@@ -1,0 +1,14 @@
+.wao-the-joya__products { display: grid; gap: 1.25rem; }
+.wao-the-joya__product { background: var(--joya-paper); border: 1px solid var(--joya-line); box-shadow: 0 .5rem 2rem rgba(23,19,15,.04); overflow: hidden; transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease; }
+.wao-the-joya__media--product { aspect-ratio: 4 / 4.6; transition: transform .55s ease; }
+.wao-the-joya__media--warm { background: linear-gradient(145deg, #d9c1a7, #f2e5d5); }
+.wao-the-joya__media--dark { background: linear-gradient(145deg, #383029, #99836e); color: var(--joya-canvas); }
+.wao-the-joya__media--dark small { color: #ded4ca; }
+.wao-the-joya__product-copy { padding: 1.25rem; }
+.wao-the-joya__product-copy > p:not(.wao-the-joya__eyebrow) { color: var(--joya-muted); margin-top: .65rem; }
+.wao-the-joya__product dl { border-top: 1px solid var(--joya-line); margin-top: 1.1rem; padding-top: .6rem; }
+.wao-the-joya__product dl div { display: flex; font-size: .7rem; justify-content: space-between; padding-top: .45rem; }
+.wao-the-joya__product dd { color: var(--joya-muted); }
+.wao-the-joya__status { border-top: 1px solid var(--joya-line); color: var(--joya-muted); display: block; font-size: .62rem; letter-spacing: .07em; margin-top: 1rem; padding-top: .8rem; text-transform: uppercase; }
+@media (hover: hover) { .wao-the-joya__product:hover { border-color: rgba(170,131,83,.65); box-shadow: 0 1.2rem 3rem var(--joya-glow); transform: translateY(-4px); } .wao-the-joya__product:hover .wao-the-joya__media--product { transform: scale(1.018); } }
+@media (min-width: 44rem) { .wao-the-joya__products { grid-template-columns: repeat(3, minmax(0,1fr)); } }

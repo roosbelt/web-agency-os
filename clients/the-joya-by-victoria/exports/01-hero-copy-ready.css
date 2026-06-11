@@ -1,0 +1,61 @@
+/* The Joya by Victoria · estilos copy-ready: 01-hero
+   Pegar junto al HTML del mismo nombre. Todos los selectores están encapsulados. */
+.wao-the-joya {--joya-ink: #17130f;
+  --joya-muted: #71685f;
+  --joya-canvas: #f5f0e8;
+  --joya-paper: #fffdf9;
+  --joya-soft: #ebe2d7;
+  --joya-gold: #aa8353;
+  --joya-line: rgba(23, 19, 15, .16);
+  --joya-glow: rgba(190, 145, 88, .22);
+  background: var(--joya-canvas);
+  color: var(--joya-ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow: hidden;}
+.wao-the-joya *, .wao-the-joya *::before, .wao-the-joya *::after {box-sizing: border-box;}
+.wao-the-joya h1, .wao-the-joya h2, .wao-the-joya h3, .wao-the-joya p, .wao-the-joya blockquote, .wao-the-joya dl, .wao-the-joya dd {margin: 0;}
+.wao-the-joya h1, .wao-the-joya h2, .wao-the-joya h3 {font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-height: 1.05;}
+.wao-the-joya h1 {font-size: clamp(2.8rem, 10vw, 6.6rem); letter-spacing: -.06em; max-width: 12ch;}
+.wao-the-joya h2 {font-size: clamp(2.2rem, 7vw, 4.7rem); letter-spacing: -.05em; max-width: 13ch;}
+.wao-the-joya h3 {font-size: 1.45rem;}
+.wao-the-joya a {color: inherit;}
+.wao-the-joya a:focus-visible, .wao-the-joya summary:focus-visible {outline: 2px solid var(--joya-gold); outline-offset: 4px;}
+.wao-the-joya__container {margin-inline: auto; max-width: 82rem; padding-inline: clamp(1.15rem, 4vw, 3.5rem); width: 100%;}
+.wao-the-joya__module {position: relative;}
+.wao-the-joya__eyebrow {color: var(--joya-gold); font-size: .68rem; font-weight: 700; letter-spacing: .19em; margin-bottom: 1rem; text-transform: uppercase;}
+.wao-the-joya__lead {color: var(--joya-muted); font-size: 1.05rem; max-width: 52ch;}
+.wao-the-joya__actions {display: flex; flex-direction: column; gap: .7rem; margin-top: 1.7rem;}
+.wao-the-joya__button {align-items: center; border: 1px solid var(--joya-ink); display: inline-flex; font-size: .7rem; font-weight: 700; justify-content: center; letter-spacing: .1em; min-height: 2.9rem; padding: .75rem 1.05rem; text-decoration: none; text-transform: uppercase; transition: background-color .25s ease, border-color .25s ease, color .25s ease, transform .25s ease;}
+.wao-the-joya__button--ghost {background: transparent;}
+.wao-the-joya__button--disabled {cursor: not-allowed; opacity: .62;}
+.wao-the-joya__note {color: var(--joya-muted); font-size: .72rem; margin-top: 1rem; max-width: 55ch;}
+.wao-the-joya__media {align-items: center; background: linear-gradient(145deg, #ded1c0, #f1e9df); border: 1px solid rgba(170, 131, 83, .35); display: flex; flex-direction: column; justify-content: center; overflow: hidden; padding: 1.25rem; position: relative; text-align: center;}
+.wao-the-joya__media::before {border: 1px solid rgba(255,255,255,.5); content: ""; inset: .65rem; pointer-events: none; position: absolute;}
+.wao-the-joya__media img {color: transparent; height: 100%; inset: 0; object-fit: cover; position: absolute; transition: transform .55s ease; width: 100%;}
+.wao-the-joya__media-index {font-size: .58rem; left: 1.2rem; letter-spacing: .16em; position: absolute; text-transform: uppercase; top: 1.1rem;}
+.wao-the-joya__media-mark {border: 1px solid var(--joya-gold); border-radius: 50%; display: block; height: 5rem; margin-bottom: 1.2rem; position: relative; transform: rotate(45deg); width: 5rem;}
+.wao-the-joya__media-mark::after {border: 1px solid var(--joya-gold); content: ""; inset: .7rem; position: absolute;}
+.wao-the-joya__media p {font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem;}
+.wao-the-joya__media small {color: var(--joya-muted); font-size: .63rem; letter-spacing: .08em; margin-top: .4rem; text-transform: uppercase;}
+.wao-the-joya__reveal {animation: joya-reveal .7s both; animation-timeline: view(); animation-range: entry 5% cover 22%;}
+@keyframes joya-reveal { from { opacity: .35; transform: translateY(1.25rem); } to { opacity: 1; transform: translateY(0); } }
+@media (hover: hover) {
+.wao-the-joya__button:not(.wao-the-joya__button--disabled):hover {background: var(--joya-ink); color: var(--joya-canvas); transform: translateY(-2px);}
+}
+@media (min-width: 48rem) {
+.wao-the-joya__actions {flex-direction: row; flex-wrap: wrap;}
+}
+.wao-the-joya__hero {min-height: calc(100svh - 4.5rem); padding-block: clamp(3rem, 8vw, 7rem);}
+.wao-the-joya__hero-grid {align-items: center; display: grid; gap: 2.5rem;}
+.wao-the-joya__hero-copy {position: relative; z-index: 1;}
+.wao-the-joya__hero-copy .wao-the-joya__lead {margin-top: 1.25rem;}
+.wao-the-joya__media--hero {aspect-ratio: 4 / 5; box-shadow: 0 1.5rem 5rem var(--joya-glow); min-height: 27rem;}
+@media (min-width: 64rem) {
+.wao-the-joya__hero-grid {grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(3rem, 8vw, 8rem);}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.wao-the-joya *, .wao-the-joya *::before, .wao-the-joya *::after {animation: none; scroll-behavior: auto; transition-duration: .01ms;}
+}
