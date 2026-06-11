@@ -100,3 +100,14 @@ Usa scores para priorizar mejoras, no para ocultar incertidumbre. `Client review
 ## Ejemplo incluido
 
 `clients/example-luxury-jewelry/` muestra una landing ficticia para **Luméra Atelier**, una marca premium de joyería. El ejemplo demuestra la separación entre documentos de decisión, HTML copiable, CSS encapsulado, preview y reporte QA.
+
+## Industry Playbooks
+
+Los [Industry Playbooks](playbooks/industries/README.md) adaptan el sistema a la intención comercial, objeciones, pruebas, imágenes, SEO y riesgos de cada rubro. Están disponibles para joyería/accesorios de lujo, construcción/materiales, belleza/salón/spa, servicios profesionales, real estate, restaurante/food, ecommerce y marca personal.
+
+1. Elige el playbook primario según la fuente principal de ingresos, no solo según cómo se describe la marca.
+2. Completa [`templates/industry-discovery-template.md`](templates/industry-discovery-template.md) y registra industrias secundarias o conflictos del modelo.
+3. Usa el playbook como lente en todas las etapas; no copies su estructura automáticamente ni omitas investigación.
+4. Antes de marcar Client-ready o Publish-ready, cumple tanto los criterios generales como los criterios específicos de la industria.
+
+Los playbooks no autorizan claims, certificaciones, disponibilidad, resultados ni políticas. Todo dato sensible continúa sujeto a evidencia y a las puertas del Agent Performance System.

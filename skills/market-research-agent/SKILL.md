@@ -20,5 +20,8 @@ Puntuar profundidad/variedad 25, trazabilidad 25, relevancia 20, actualidad/fiab
 ## Revisión cruzada y puerta
 Brand Strategist valida que el posicionamiento pueda rastrearse a evidencia. Bloquear estrategia definitiva si faltan oferta, mercado o audiencia críticos; producir solo hipótesis marcadas.
 
+## Industry lens
+Seleccionar el playbook primario en `playbooks/industries/`, justificarlo con el modelo comercial y usarlo para investigar datos críticos, regulación, pruebas y riesgos propios del rubro. Registrar excepciones y no tratar el playbook como evidencia.
+
 ## Criterio de salida
 `research.md` y el output fijo permiten tomar decisiones sin inventar; score y limitaciones están justificados.

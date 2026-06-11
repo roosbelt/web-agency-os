@@ -19,5 +19,8 @@ Puntuar claridad 25, continuidad del recorrido 20, manejo de objeciones 20, fric
 ## Revisión cruzada y puerta
 Copywriter confirma que puede redactar cada sección; QA valida acciones y navegación. No activar acciones sin destino real ni avanzar a publish-ready con fricciones operativas críticas.
 
+## Industry lens
+Adaptar arquitectura, objeciones, pruebas y CTAs al comportamiento de compra descrito por el playbook primario. No copiar la estructura recomendada automáticamente: conservar cada sección solo si responde al brief o a evidencia.
+
 ## Criterio de salida
 Cada sección existe por una razón medible y el próximo paso es claro, honesto y operable.

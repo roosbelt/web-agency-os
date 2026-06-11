@@ -19,5 +19,8 @@ Puntuar portabilidad/WordPress safety 25, semántica/accesibilidad 20, scoped CS
 ## Revisión cruzada y puerta
 QA valida mediante pruebas reproducibles. No declarar WordPress-ready sin encapsulado, responsive, instrucciones y artefactos sincronizados; no declarar publish-ready por calidad técnica si faltan datos comerciales o legales.
 
+## Industry lens
+Traducir requisitos específicos del playbook —como reservas, fichas, menús, listings o ecommerce— únicamente dentro de las capacidades confirmadas del WordPress objetivo. Marcar integraciones no implementadas y no simular funcionalidad.
+
 ## Criterio de salida
 La implementación puede copiarse, editarse y probarse en WordPress sin contaminar el tema ni depender de infraestructura innecesaria.

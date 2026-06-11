@@ -19,5 +19,8 @@ Puntuar claridad 25, especificidad/voz 20, conversión 20, escaneabilidad 15 y v
 ## Revisión cruzada y puerta
 Brand revisa voz/diferenciación; SEO revisa intención; QA verifica claims. Bloquear client review si el texto inventa confianza, resultados, políticas o atributos de producto.
 
+## Industry lens
+Aplicar vocabulario, objeciones y requisitos de confianza propios del rubro sin asumir claims, licencias, resultados ni políticas. Señalar explícitamente los datos sensibles que bloquean copy final o publicación.
+
 ## Criterio de salida
 El copy puede implementarse sin reinterpretación y cada afirmación es demostrable o está explícitamente pendiente.

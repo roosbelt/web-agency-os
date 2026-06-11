@@ -19,5 +19,8 @@ Puntuar evidencia 20, especificidad 25, diferenciación 25, utilidad para ejecuc
 ## Revisión cruzada y puerta
 UX/CRO y Copywriter prueban que la estrategia produce recorrido y mensajes concretos. No avanzar a ejecución final si audiencia, oferta o razones para creer son supuestos no aprobados.
 
+## Industry lens
+Usar el playbook de industria para distinguir convenciones útiles de clichés, definir pruebas esperadas y construir diferenciación específica. Documentar cualquier conflicto entre posicionamiento deseado y requisitos de confianza del rubro.
+
 ## Criterio de salida
 La estrategia decide qué decir, cómo diferenciarse, qué evitar y cómo evaluar todo output posterior.

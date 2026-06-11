@@ -20,5 +20,8 @@ Puntuar alineación con intención 25, semántica/headings 20, metadatos 15, uti
 ## Revisión cruzada y puerta
 Copy valida naturalidad; Frontend confirma implementación semántica. Bloquear publish-ready si metadatos, canonical/indexabilidad o datos locales obligatorios no están resueltos.
 
+## Industry lens
+Usar el playbook para identificar intención, estructura y schema potenciales; verificar mercado, datos locales/comerciales y elegibilidad antes de implementarlos. El playbook orienta preguntas, no demuestra demanda ni autoriza schema.
+
 ## Criterio de salida
 La recomendación SEO es implementable, honesta y señala con precisión qué datos faltan.

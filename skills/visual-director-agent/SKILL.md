@@ -19,5 +19,8 @@ Puntuar conexión estratégica 25, diferenciación 25, jerarquía/comprensión 2
 ## Revisión cruzada y puerta
 Frontend valida viabilidad; Creative Director cuestiona originalidad y fuerza. Bloquear client review si la dirección no puede explicarse por sección o simula recursos reales.
 
+## Industry lens
+Usar el playbook para definir activos y expectativas visuales del rubro, y después crear una adaptación propia que evite clichés de categoría. Toda imagen, prueba visual y efecto debe tener propósito, permiso y fallback.
+
 ## Criterio de salida
 Cada decisión visual tiene intención, ejecución posible, fallback y argumento de diferenciación.

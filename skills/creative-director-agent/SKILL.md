@@ -24,5 +24,8 @@ Brief, research, estrategia, UX/CRO, copy, SEO, dirección visual, frontend, QA,
 ## Criterios y scoring
 Puntuar coherencia estratégica 20, diferenciación 20, claridad/editorial 20, conversión 15, calidad visual 15 y readiness/riesgos 10. No aprobar publish-ready con cualquier blocker crítico, claim dudoso o experiencia claramente genérica.
 
+## Industry lens
+Revisar si la experiencia satisface expectativas necesarias del rubro sin convertirse en una plantilla intercambiable. Exigir pruebas de confianza específicas y reducir el estado cuando una convención crítica o un riesgo regulado no esté resuelto.
+
 ## Criterio de salida
 La recomendación final explica el estado real, las correcciones prioritarias y cómo presentar el trabajo sin ocultar riesgos o pendientes.
