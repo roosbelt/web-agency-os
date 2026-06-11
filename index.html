@@ -3,80 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Web Agency OS workspace for reviewing and shipping WordPress-ready client websites.">
-  <meta name="theme-color" content="#090909">
-  <title>Web Agency OS — The Joya by Victoria</title>
+  <meta name="description" content="Web Agency OS client website production workspace.">
+  <meta name="theme-color" content="#0d1117">
+  <title>Web Agency OS — Projects</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
-  <div class="app-shell">
+  <div class="app">
     <aside class="sidebar" aria-label="Workspace navigation">
       <a class="brand" href="./" aria-label="Web Agency OS home"><span aria-hidden="true">W</span><strong>Web Agency OS</strong></a>
       <nav aria-label="Dashboard sections">
-        <a class="active" href="#project"><span aria-hidden="true">◫</span>Projects</a>
+        <a class="active" href="#projects"><span aria-hidden="true">▦</span>Projects</a>
         <a href="#readiness"><span aria-hidden="true">◉</span>Readiness</a>
         <a href="#exports"><span aria-hidden="true">⇩</span>Exports</a>
         <a href="#workflow"><span aria-hidden="true">↳</span>Workflow</a>
         <a href="#team"><span aria-hidden="true">✦</span>Team</a>
+        <a href="#quality"><span aria-hidden="true">✓</span>Quality</a>
       </nav>
-      <div class="sidebar-foot"><span><i aria-hidden="true"></i>Local workspace</span><small>No API keys</small></div>
+      <footer><span><i aria-hidden="true"></i>Static workspace</span><small>No API keys</small></footer>
     </aside>
 
     <div class="workspace">
-      <header class="topbar"><a href="#project">The Joya by Victoria</a><span>Client review</span></header>
+      <header class="topbar">
+        <div><strong>Web Agency OS</strong><span>Client website production workspace</span></div>
+        <dl aria-label="Workspace metrics"><div><dt>Projects</dt><dd>5</dd></div><div><dt>Ready previews</dt><dd>2</dd></div><div><dt>Client review</dt><dd>1</dd></div><div><dt>Blocked</dt><dd>3</dd></div></dl>
+        <span class="static-state"><i aria-hidden="true"></i>Static dashboard</span>
+      </header>
+
       <main id="content">
-        <section class="hero" id="project" aria-labelledby="page-title">
-          <p class="eyebrow">Primary project · Premium jewelry</p>
-          <h1 id="page-title">The Joya by Victoria is ready for client review.</h1>
-          <p class="hero-copy">The site is modular, WordPress-ready, and prepared for presentation. Publishing remains blocked until real assets and commercial data are approved.</p>
-          <nav class="primary-actions" aria-label="Primary project actions">
-            <a class="button button-primary" href="clients/the-joya-by-victoria/preview.html">Open Preview <span aria-hidden="true">↗</span></a>
-            <a class="button" href="clients/the-joya-by-victoria/client-readiness-scorecard.md">Open Scorecard</a>
-            <a class="button" href="#exports">Open Exports</a>
-          </nav>
-          <div class="project-meta"><span><i class="dot dot-ready" aria-hidden="true"></i>Presentation ready</span><span>WordPress HTML/CSS</span><code>clients/the-joya-by-victoria</code></div>
-        </section>
+        <section class="projects" id="projects" aria-labelledby="projects-title">
+          <header class="section-head"><div><p>Workspace overview</p><h1 id="projects-title">Projects</h1></div><span>5 active workspaces</span></header>
+          <nav class="tabs" aria-label="Project filters"><a class="active" href="#projects">All <span>5</span></a><a href="#projects">Client review <span>1</span></a><a href="#projects">WordPress-ready <span>2</span></a><a href="#projects">Blocked <span>3</span></a><a href="#projects">Not generated <span>3</span></a></nav>
 
-        <section class="decision-grid" id="readiness" aria-label="Current project decision">
-          <article class="status-card">
-            <header><div><p class="eyebrow">Current status</p><h2>Ready to show. Not ready to publish.</h2></div><a href="clients/the-joya-by-victoria/client-readiness-scorecard.md">Full scorecard <span aria-hidden="true">→</span></a></header>
-            <div class="score-line"><div class="score"><strong>60</strong><span>/100</span><small>Overall readiness</small></div><div class="progress" role="progressbar" aria-label="Overall readiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><span></span></div></div>
-            <dl class="status-list"><div><dt>Status</dt><dd class="state state-review"><i aria-hidden="true"></i>Client review</dd></div><div><dt>WordPress-ready</dt><dd class="state state-ready"><i aria-hidden="true"></i>Yes</dd></div><div><dt>Publish-ready</dt><dd class="state state-blocked"><i aria-hidden="true"></i>Blocked</dd></div></dl>
-            <nav class="text-links" aria-label="Readiness reports"><a href="clients/the-joya-by-victoria/agent-performance-report.md">Agent report</a><a href="clients/the-joya-by-victoria/final-creative-review.md">Creative review</a><a href="clients/the-joya-by-victoria/quality-report.md">QA report</a></nav>
-          </article>
-
-          <article class="missing-card">
-            <header><p class="eyebrow">What’s missing</p><h2>Six inputs unlock publishing.</h2></header>
-            <ul><li><span>01</span>Real product photos</li><li><span>02</span>Product names and materials</li><li><span>03</span>Prices</li><li><span>04</span>WhatsApp number</li><li><span>05</span>Shipping / returns policy</li><li><span>06</span>Legal / basic business info</li></ul>
-            <p>Until these are approved, placeholders stay visible and publish-ready remains blocked.</p>
-          </article>
-        </section>
-
-        <section class="section exports" id="exports" aria-labelledby="exports-title">
-          <header class="section-heading"><div><p class="eyebrow">Available now</p><h2 id="exports-title">WordPress exports</h2><p>Copy a full page or only the block you need.</p></div><a href="clients/the-joya-by-victoria/exports/README.md">Implementation guide <span aria-hidden="true">→</span></a></header>
-          <div class="export-grid">
-            <article class="export-item export-featured"><div><span>Full page</span><strong>Complete experience</strong><small>All approved modules in one copy-ready package.</small></div><nav aria-label="Full page export files"><a href="clients/the-joya-by-victoria/exports/full-page-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/full-page-copy-ready.css">CSS</a></nav></article>
-            <article class="export-item"><div><span>01</span><strong>Hero</strong></div><nav aria-label="Hero export files"><a href="clients/the-joya-by-victoria/exports/01-hero-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/01-hero-copy-ready.css">CSS</a></nav></article>
-            <article class="export-item"><div><span>02</span><strong>Featured products</strong></div><nav aria-label="Featured products export files"><a href="clients/the-joya-by-victoria/exports/02-featured-products-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/02-featured-products-copy-ready.css">CSS</a></nav></article>
-            <article class="export-item"><div><span>03</span><strong>Brand story</strong></div><nav aria-label="Brand story export files"><a href="clients/the-joya-by-victoria/exports/03-brand-story-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/03-brand-story-copy-ready.css">CSS</a></nav></article>
-            <article class="export-item"><div><span>04</span><strong>Consultation process</strong></div><nav aria-label="Consultation process export files"><a href="clients/the-joya-by-victoria/exports/04-consultation-process-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/04-consultation-process-copy-ready.css">CSS</a></nav></article>
-            <article class="export-item"><div><span>05</span><strong>FAQ</strong></div><nav aria-label="FAQ export files"><a href="clients/the-joya-by-victoria/exports/05-faq-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/05-faq-copy-ready.css">CSS</a></nav></article>
-            <article class="export-item"><div><span>06</span><strong>Final CTA</strong></div><nav aria-label="Final CTA export files"><a href="clients/the-joya-by-victoria/exports/06-final-cta-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/06-final-cta-copy-ready.css">CSS</a></nav></article>
+          <div class="project-table-wrap">
+            <table class="project-table">
+              <thead><tr><th>Project</th><th>Status</th><th>Readiness</th><th>WordPress</th><th>Blocker / next action</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr class="priority-high">
+                  <td data-label="Project"><div class="project-name"><span class="avatar avatar-joya">TJ</span><div><strong>The Joya by Victoria</strong><small>Premium jewelry · High priority</small></div></div></td>
+                  <td data-label="Status"><span class="badge badge-review"><i aria-hidden="true"></i>Client review</span></td>
+                  <td data-label="Readiness"><div class="readiness"><strong>60%</strong><span><i style="width:60%"></i></span></div></td>
+                  <td data-label="WordPress"><span class="yes">Yes</span><small>Publish blocked</small></td>
+                  <td data-label="Next action"><strong>Approve real assets</strong><small>Photos, prices, WhatsApp, policies</small></td>
+                  <td data-label="Actions"><nav class="row-actions" aria-label="The Joya by Victoria files"><a class="primary" href="clients/the-joya-by-victoria/preview.html">Preview</a><a href="clients/the-joya-by-victoria/client-readiness-scorecard.md">Scorecard</a><details><summary>More</summary><div><a href="clients/the-joya-by-victoria/wordpress-body.html">HTML</a><a href="clients/the-joya-by-victoria/style.css">CSS</a><a href="clients/the-joya-by-victoria/agent-performance-report.md">Agent report</a><a href="clients/the-joya-by-victoria/final-creative-review.md">Creative review</a><a href="clients/the-joya-by-victoria/quality-report.md">QA report</a><a href="clients/the-joya-by-victoria/wordpress-instructions.md">Instructions</a></div></details></nav></td>
+                </tr>
+                <tr>
+                  <td data-label="Project"><div class="project-name"><span class="avatar avatar-demo">EL</span><div><strong>Example Luxury Jewelry</strong><small>Luxury landing · Medium priority</small></div></div></td>
+                  <td data-label="Status"><span class="badge"><i aria-hidden="true"></i>Demo</span></td>
+                  <td data-label="Readiness"><div class="readiness"><strong>72%</strong><span><i style="width:72%"></i></span></div></td>
+                  <td data-label="WordPress"><span class="yes">Yes</span><small>Publish no</small></td>
+                  <td data-label="Next action"><strong>Keep as reference</strong><small>Demo content is not client data</small></td>
+                  <td data-label="Actions"><nav class="row-actions" aria-label="Example Luxury Jewelry files"><a class="primary" href="clients/example-luxury-jewelry/preview.html">Preview</a><details><summary>More</summary><div><a href="clients/example-luxury-jewelry/wordpress-body.html">HTML</a><a href="clients/example-luxury-jewelry/style.css">CSS</a><a href="clients/example-luxury-jewelry/quality-report.md">QA report</a><a href="clients/example-luxury-jewelry/wordpress-instructions.md">Instructions</a></div></details></nav></td>
+                </tr>
+                <tr class="priority-high simulated">
+                  <td data-label="Project"><div class="project-name"><span class="avatar">JS</span><div><strong>JAPA Soluciones</strong><small>Construction services · High priority</small></div></div></td>
+                  <td data-label="Status"><span class="badge badge-blocked"><i aria-hidden="true"></i>Intake needed</span></td>
+                  <td data-label="Readiness"><div class="readiness"><strong>25%</strong><span><i style="width:25%"></i></span></div></td>
+                  <td data-label="WordPress"><span class="no">No</span><small>Not generated</small></td>
+                  <td data-label="Next action"><strong>Complete intake</strong><small>Catalog, photos, WhatsApp, trust proof</small></td>
+                  <td data-label="Actions"><span class="disabled-action" aria-disabled="true">Not generated</span></td>
+                </tr>
+                <tr class="simulated">
+                  <td data-label="Project"><div class="project-name"><span class="avatar">VS</span><div><strong>Vicky Studio</strong><small>Beauty salon · Medium priority</small></div></div></td>
+                  <td data-label="Status"><span class="badge badge-pending"><i aria-hidden="true"></i>Research pending</span></td>
+                  <td data-label="Readiness"><div class="readiness"><strong>35%</strong><span><i style="width:35%"></i></span></div></td>
+                  <td data-label="WordPress"><span class="no">No</span><small>Not generated</small></td>
+                  <td data-label="Next action"><strong>Define service structure</strong><small>Services, pricing, gallery, booking flow</small></td>
+                  <td data-label="Actions"><span class="disabled-action" aria-disabled="true">Not generated</span></td>
+                </tr>
+                <tr class="simulated">
+                  <td data-label="Project"><div class="project-name"><span class="avatar">CO</span><div><strong>Commercial OS</strong><small>Internal finance/product page · Low priority</small></div></div></td>
+                  <td data-label="Status"><span class="badge badge-prototype"><i aria-hidden="true"></i>Prototype</span></td>
+                  <td data-label="Readiness"><div class="readiness"><strong>48%</strong><span><i style="width:48%"></i></span></div></td>
+                  <td data-label="WordPress"><span class="no">No</span><small>Not generated</small></td>
+                  <td data-label="Next action"><strong>Validate message</strong><small>Final messaging, assets, validation</small></td>
+                  <td data-label="Actions"><span class="disabled-action" aria-disabled="true">Not generated</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
 
-        <section class="section compact-section" id="workflow" aria-labelledby="workflow-title">
-          <header class="section-heading"><div><p class="eyebrow">How it was made</p><h2 id="workflow-title">One clear workflow</h2></div><span>Review is the next step</span></header>
-          <ol class="workflow"><li class="done">Research</li><li class="done">Brand</li><li class="done">UX/CRO</li><li class="done">Copy</li><li class="done">SEO</li><li class="done">Visual</li><li class="done">Frontend</li><li class="done">QA</li><li class="current">Client review</li></ol>
+        <section class="summary-grid" id="readiness" aria-label="Readiness and attention summary">
+          <article class="panel readiness-summary"><header><div><p>Readiness</p><h2>Workspace status</h2></div><span>48% average</span></header><dl><div><dt>Average readiness</dt><dd>48%</dd></div><div><dt>Client review ready</dt><dd>1</dd></div><div><dt>WordPress-ready</dt><dd>2</dd></div><div><dt>Publish blocked</dt><dd class="warning">3</dd></div></dl></article>
+          <article class="panel attention"><header><div><p>Needs attention</p><h2>Next decisions</h2></div><span>4 open</span></header><ul><li><strong>The Joya</strong><span>Approve real assets and commercial data</span></li><li><strong>JAPA</strong><span>Complete intake and service catalog</span></li><li><strong>Vicky Studio</strong><span>Define services and pricing</span></li><li><strong>Commercial OS</strong><span>Validate final message</span></li></ul></article>
         </section>
 
-        <section class="support-grid">
-          <article class="section compact-section" id="team" aria-labelledby="team-title"><header class="section-heading"><div><p class="eyebrow">Specialist team</p><h2 id="team-title">Nine perspectives. One outcome.</h2></div></header><ul class="team-list"><li>Research</li><li>Brand</li><li>UX/CRO</li><li>Copy</li><li>SEO</li><li>Visual</li><li>Frontend</li><li>QA</li><li>Creative Director</li></ul></article>
-          <article class="section compact-section quality" aria-labelledby="quality-title"><header class="section-heading"><div><p class="eyebrow">Definition of done</p><h2 id="quality-title">Built to move safely.</h2></div></header><ul><li>Semantic HTML</li><li>Scoped CSS</li><li>Mobile-first</li><li>Accessible basics</li><li>No fake claims</li><li>WordPress notes</li></ul></article>
+        <section class="secondary" id="exports">
+          <details open><summary><span><strong>WordPress exports</strong><small>The Joya by Victoria · copy-ready HTML/CSS</small></span><span>15 files</span></summary><div class="export-list"><div><strong>Full page</strong><nav><a href="clients/the-joya-by-victoria/exports/full-page-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/full-page-copy-ready.css">CSS</a></nav></div><div><strong>Hero</strong><nav><a href="clients/the-joya-by-victoria/exports/01-hero-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/01-hero-copy-ready.css">CSS</a></nav></div><div><strong>Products</strong><nav><a href="clients/the-joya-by-victoria/exports/02-featured-products-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/02-featured-products-copy-ready.css">CSS</a></nav></div><div><strong>Brand story</strong><nav><a href="clients/the-joya-by-victoria/exports/03-brand-story-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/03-brand-story-copy-ready.css">CSS</a></nav></div><div><strong>Consultation</strong><nav><a href="clients/the-joya-by-victoria/exports/04-consultation-process-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/04-consultation-process-copy-ready.css">CSS</a></nav></div><div><strong>FAQ</strong><nav><a href="clients/the-joya-by-victoria/exports/05-faq-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/05-faq-copy-ready.css">CSS</a></nav></div><div><strong>Final CTA</strong><nav><a href="clients/the-joya-by-victoria/exports/06-final-cta-copy-ready.html">HTML</a><a href="clients/the-joya-by-victoria/exports/06-final-cta-copy-ready.css">CSS</a></nav></div><div><strong>Guide</strong><nav><a href="clients/the-joya-by-victoria/exports/README.md">Open</a></nav></div></div></details>
         </section>
 
-        <footer class="page-footer"><div><strong>Web Agency OS</strong><span>Focused client website production.</span></div><nav aria-label="Secondary project"><span>Also in this workspace</span><a href="clients/example-luxury-jewelry/preview.html">Example Luxury Jewelry <span aria-hidden="true">↗</span></a></nav></footer>
+        <section class="secondary compact" id="workflow"><details><summary><span><strong>Workflow</strong><small>Production sequence</small></span><span>11 stages</span></summary><ol class="workflow"><li>Brief</li><li>Research</li><li>Brand</li><li>UX/CRO</li><li>Copy</li><li>SEO</li><li>Visual</li><li>Frontend</li><li>QA</li><li>Creative Director</li><li>WordPress</li></ol></details></section>
+        <section class="secondary compact" id="team"><details><summary><span><strong>Team</strong><small>Specialist agents</small></span><span>9 roles</span></summary><ul class="chips"><li>Research</li><li>Brand</li><li>UX/CRO</li><li>Copy</li><li>SEO</li><li>Visual</li><li>Frontend</li><li>QA</li><li>Creative Director</li></ul></details></section>
+        <section class="secondary compact" id="quality"><details><summary><span><strong>Quality</strong><small>Definition of done</small></span><span>7 checks</span></summary><ul class="checks"><li>Semantic HTML</li><li>Scoped CSS</li><li>Mobile-first</li><li>Accessibility basics</li><li>No fake claims</li><li>Placeholder control</li><li>WordPress notes</li></ul></details></section>
       </main>
     </div>
   </div>
