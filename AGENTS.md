@@ -3,19 +3,22 @@
 ## Objetivo del sistema
 Web Agency OS convierte un brief de cliente en una página web competitiva, diferenciada y lista para WordPress. Codex debe coordinar investigación, estrategia, UX/CRO, copy, SEO, dirección visual, frontend y control de calidad sin API keys, backend, base de datos ni dependencias innecesarias.
 
-## Flujo obligatorio
-1. **Brief:** completar `clients/<cliente>/brief.md`; registrar preguntas abiertas y supuestos.
-2. **Investigación:** ejecutar `playbooks/01-market-research.md`; guardar hallazgos, fecha de consulta y URLs en `research.md`.
-3. **Estrategia:** traducir evidencia en posicionamiento, audiencia, propuesta de valor y objetivos en `strategy.md`.
-4. **Arquitectura y conversión:** definir jerarquía, recorrido, CTAs y manejo de objeciones antes de redactar.
-5. **Copy y SEO:** escribir copy específico y verificable; asignar intención, título, metadescripción y estructura semántica.
-6. **Dirección visual:** definir sistema visual coherente con la estrategia, no basado en tendencias sin propósito; cuando existan referencias, analizarlas con `playbooks/09-reference-effects-analysis.md`.
-7. **Recursos visuales:** registrar imágenes públicas aprobadas y fallbacks siguiendo `playbooks/10-image-preview-system.md`.
-8. **Construcción:** producir `wordpress-body.html`, `style.css` y `preview.html` mobile-first.
-9. **QA:** revisar contenido, accesibilidad, SEO, responsive, rendimiento y compatibilidad WordPress; documentar en `quality-report.md`.
-10. **Entrega:** completar `wordpress-instructions.md` y confirmar la definición de trabajo terminado.
+## Flujo obligatorio y Agent Performance System
+1. **Brief:** completar `clients/<cliente>/brief.md`; registrar preguntas abiertas, datos críticos y supuestos.
+2. **Research:** ejecutar investigación, entregar evidencia trazable y research depth score.
+3. **Brand:** definir posicionamiento, diferenciación, tono, límites de claims y brand score.
+4. **UX/CRO:** definir intención/objeción por sección, recorrido, fricciones, CTA por etapa y UX/CRO score.
+5. **Copy:** entregar H1, subheadline, CTA, microcopy, objeciones y claims por validar con copy score.
+6. **SEO:** definir intención, metadatos, headings, schema sugerido y datos faltantes con SEO score.
+7. **Visual:** definir intención/efectos por sección, activos, riesgos genéricos y visual score.
+8. **Frontend:** producir HTML/CSS/preview modular, scoped y WordPress-safe con frontend score.
+9. **QA:** consolidar scorecard, pruebas, bloqueadores, warnings y readiness por estado.
+10. **Creative Director Review:** revisar coherencia, diferenciación, claridad, conversión y decidir estado final.
+11. **Entrega:** completar instrucciones, scorecards y definición de trabajo terminado.
 
-No se debe saltar una etapa ni empezar diseño/código sin brief, investigación y estrategia suficientes. Cuando una etapa no aplique, justificarlo en el entregable correspondiente.
+Flujo obligatorio: `Research → Brand → UX/CRO → Copy → SEO → Visual → Frontend → QA → Creative Director Review`.
+
+Cada agente debe usar `templates/agent-output-template.md`, cumplir su output fijo, declarar score con evidencia y aceptar revisión cruzada. Seguir `playbooks/11-agent-performance-system.md` y `playbooks/12-client-readiness-scorecard.md`. No avanzar si faltan datos críticos incompatibles con la siguiente etapa; indicar bloqueo, riesgo, propietario y trabajo seguro que sí puede continuar.
 
 ## Agentes especialistas
 - **Market Research Agent:** mercado, audiencia, competidores y evidencia.
@@ -25,9 +28,25 @@ No se debe saltar una etapa ni empezar diseño/código sin brief, investigación
 - **SEO Agent:** intención de búsqueda, metadatos, semántica y contenido.
 - **Visual Director Agent:** concepto visual, tipografía, color, composición y recursos.
 - **WordPress Frontend Agent:** HTML/CSS semántico, encapsulado y portable.
-- **QA Agent:** validación integral y reporte de incidencias.
+- **QA Agent:** validación integral, scorecard, bloqueadores y readiness.
+- **Creative Director / Final Editor Agent:** revisión final de coherencia, diferenciación, claridad y estado.
 
 Cada agente sigue su `skills/<agente>/SKILL.md` y el playbook relacionado. La estrategia aprobada es la fuente de verdad compartida.
+
+## Estados y puertas de calidad
+- **Internal draft:** exploración incompleta; supuestos y bloqueadores permitidos si están marcados.
+- **Client review:** coherente para solicitar decisiones al cliente; no implica seguridad de publicación.
+- **WordPress-ready:** implementación portable, probada y documentada; puede seguir bloqueada comercial/legalmente.
+- **Publish-ready:** QA y Creative Director aprueban, todas las dimensiones aplicables alcanzan 86–100 y no existen bloqueadores críticos.
+- Escala común: `0–40 weak`, `41–70 usable draft`, `71–85 client review ready`, `86–100 publish ready`.
+- Un score alto nunca anula un bloqueador crítico. Toda transición requiere output fijo, score con evidencia y revisión cruzada.
+
+## Reglas de rendimiento de agentes
+- Separar hechos, decisiones, inferencias y supuestos; cada supuesto incluye riesgo, validación, propietario y fecha/etapa límite.
+- Bloquear o limitar estado si faltan oferta, audiencia, claims, CTA/destino, imágenes/permisos, datos comerciales, políticas, legales o capacidades WordPress críticas.
+- Evitar outputs genéricos: cada sección, mensaje, efecto y decisión debe responder a evidencia, audiencia, objetivo o restricción concreta.
+- El agente receptor revisa el handoff anterior y no debe continuar si necesita inventar o reinterpretar decisiones críticas.
+- QA consolida scorecards; Creative Director puede reducir el estado si la experiencia es genérica, confusa, débil o no demostrable.
 
 ## Investigación en internet
 - Se permite navegar por sitios públicos sin iniciar sesión y sin API keys.
@@ -70,4 +89,4 @@ Nunca inventar testimonios, premios, clientes, cifras, precios, certificaciones,
 - **Entrega:** instrucciones suficientes para publicar y editar sin conocimientos del proceso interno.
 
 ## Definición de trabajo terminado
-Un cliente está terminado cuando todos los archivos requeridos existen; hechos y supuestos están diferenciados; fuentes están registradas; el copy no contiene datos inventados; HTML y CSS pasan revisión semántica, responsive y de encapsulado; referencias, efectos, imágenes, alt text y fallbacks están documentados y validados; `preview.html` representa el resultado; QA no tiene bloqueadores abiertos; y las instrucciones permiten copiar, publicar y mantener la página en WordPress.
+Un cliente está terminado cuando Creative Director Review confirma el estado declarado; todos los outputs fijos y scorecards existen; hechos y supuestos están diferenciados; fuentes están registradas; el copy no contiene datos inventados; HTML y CSS pasan revisión semántica, responsive y de encapsulado; referencias, efectos, imágenes, alt text y fallbacks están documentados y validados; `preview.html` representa el resultado; QA no tiene bloqueadores abiertos; y las instrucciones permiten copiar, publicar y mantener la página en WordPress.

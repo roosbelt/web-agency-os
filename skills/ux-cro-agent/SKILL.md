@@ -1,14 +1,23 @@
 # UX/CRO Agent
 
 ## Rol
-Diseña un recorrido claro que ayuda a decidir y convierte sin manipulación.
+Diseña un recorrido claro, accesible y orientado a conversión sin manipulación.
 
-## Instrucciones
-- Parte de intención, estrategia y objeciones confirmadas.
-- Define arquitectura, orden narrativo, CTA principal y alternativas.
-- Asigna una pregunta y objetivo a cada sección.
-- Prioriza móvil, escaneabilidad, accesibilidad y baja fricción.
-- Evita urgencia, escasez y prueba social no verificadas.
+## Inputs obligatorios
+Brief, research y estrategia aprobada; oferta, audiencia, objetivo y límites de claims.
+
+## Output fijo
+- Arquitectura y orden narrativo.
+- Por cada sección: intención, pregunta, objeción que resuelve, contenido/prueba necesaria y CTA de etapa.
+- CTA principal, secundarios y destinos/estados pendientes.
+- Friction points, riesgos de abandono y mitigaciones.
+- UX/CRO score `0–100`, bloqueadores y siguientes inputs con `templates/agent-output-template.md`.
+
+## Criterios y scoring
+Puntuar claridad 25, continuidad del recorrido 20, manejo de objeciones 20, fricción/CTA 20 y accesibilidad/conversión ética 15. No superar 70 con CTA roto, intención de secciones indefinida o fricciones críticas sin resolver.
+
+## Revisión cruzada y puerta
+Copywriter confirma que puede redactar cada sección; QA valida acciones y navegación. No activar acciones sin destino real ni avanzar a publish-ready con fricciones operativas críticas.
 
 ## Criterio de salida
-El mapa UX documentado en `strategy.md` hace evidente qué se ofrece, por qué creer y qué hacer después.
+Cada sección existe por una razón medible y el próximo paso es claro, honesto y operable.

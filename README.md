@@ -4,7 +4,7 @@ Web Agency OS es un sistema de trabajo basado en archivos para investigar, plani
 
 ## Cómo funciona
 
-Cada proyecto avanza en orden por ocho disciplinas:
+Cada proyecto avanza en orden por disciplinas especializadas y una revisión creativa final:
 
 1. investigación de mercado;
 2. estrategia de marca;
@@ -13,7 +13,8 @@ Cada proyecto avanza en orden por ocho disciplinas:
 5. SEO;
 6. dirección visual;
 7. HTML/CSS para WordPress;
-8. revisión de calidad.
+8. revisión de calidad;
+9. Creative Director / Final Editor.
 
 Las reglas generales viven en [`AGENTS.md`](AGENTS.md), los procesos en [`playbooks/`](playbooks/), las instrucciones de especialistas en [`skills/`](skills/) y los formatos reutilizables en [`templates/`](templates/).
 
@@ -65,6 +66,28 @@ El sistema permite convertir referencias visuales e imágenes públicas en una d
 5. `preview.html` puede mostrar las imágenes aprobadas. Para WordPress, copiar las URLs finales al HTML/CSS, mantener alt text y documentar sustitución, permisos y fallbacks en las instrucciones de publicación.
 
 Los efectos se implementan preferentemente con CSS encapsulado y sin JavaScript obligatorio. Una URL pública no equivale a permiso de publicación.
+
+## Agent Performance System
+
+El Agent Performance System convierte cada etapa en un handoff evaluable. Los agentes no solo generan contenido: revisan inputs, toman decisiones explícitas, declaran supuestos/riesgos, entregan un output fijo, asignan un score con evidencia y reciben revisión cruzada.
+
+El flujo es: `Research → Brand → UX/CRO → Copy → SEO → Visual → Frontend → QA → Creative Director Review`. Las reglas completas están en [`playbooks/11-agent-performance-system.md`](playbooks/11-agent-performance-system.md) y los criterios en [`playbooks/12-client-readiness-scorecard.md`](playbooks/12-client-readiness-scorecard.md).
+
+### Estados de una web
+- **Internal draft:** trabajo exploratorio o incompleto; puede tener supuestos y bloqueadores marcados.
+- **Client review:** suficientemente coherente para mostrar y solicitar decisiones; todavía no implica implementación/publicación segura.
+- **WordPress-ready:** HTML/CSS portable, probado y documentado; puede quedar bloqueado por contenido, imágenes, comercio o legales.
+- **Publish-ready:** QA y Creative Director aprueban; no quedan bloqueadores críticos ni contenido no demostrado.
+
+### Scorecards y bloqueadores
+- Cada agente usa [`templates/agent-output-template.md`](templates/agent-output-template.md) para registrar inputs, decisiones, output, supuestos, riesgos, score y bloqueadores.
+- QA consolida dimensiones con [`templates/client-readiness-scorecard-template.md`](templates/client-readiness-scorecard-template.md); Creative Director completa [`templates/final-creative-review-template.md`](templates/final-creative-review-template.md).
+- Escala: `0–40 weak`, `41–70 usable draft`, `71–85 client review ready`, `86–100 publish ready`.
+- Los scores miden evidencia existente, no trabajo prometido. Un bloqueador crítico siempre limita el estado aunque el promedio sea alto.
+- Un bloqueador debe indicar qué falta, riesgo, responsable, siguiente acción y estado máximo permitido.
+
+### Cómo interpretar el resultado
+Usa scores para priorizar mejoras, no para ocultar incertidumbre. `Client review` sirve para obtener decisiones; `WordPress-ready` describe seguridad técnica; `Publish-ready` exige además contenido, activos, datos comerciales/legales y destinos operativos aprobados.
 
 ## Principios operativos
 
