@@ -1,0 +1,127 @@
+.wao-the-joya {
+  --joya-ink: #17130f;
+  --joya-muted: #71685f;
+  --joya-canvas: #f5f0e8;
+  --joya-paper: #fffdf9;
+  --joya-soft: #ebe2d7;
+  --joya-gold: #aa8353;
+  --joya-line: rgba(23, 19, 15, .16);
+  --joya-glow: rgba(190, 145, 88, .22);
+  background: var(--joya-canvas);
+  color: var(--joya-ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow: hidden;
+}
+.wao-the-joya *, .wao-the-joya *::before, .wao-the-joya *::after { box-sizing: border-box; }
+.wao-the-joya h1, .wao-the-joya h2, .wao-the-joya h3, .wao-the-joya p, .wao-the-joya blockquote, .wao-the-joya dl, .wao-the-joya dd { margin: 0; }
+.wao-the-joya h1, .wao-the-joya h2, .wao-the-joya h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-height: 1.05; }
+.wao-the-joya h1 { font-size: clamp(2.8rem, 10vw, 6.6rem); letter-spacing: -.06em; max-width: 12ch; }
+.wao-the-joya h2 { font-size: clamp(2.2rem, 7vw, 4.7rem); letter-spacing: -.05em; max-width: 13ch; }
+.wao-the-joya h3 { font-size: 1.45rem; }
+.wao-the-joya a { color: inherit; }
+.wao-the-joya a:focus-visible, .wao-the-joya summary:focus-visible { outline: 2px solid var(--joya-gold); outline-offset: 4px; }
+.wao-the-joya__skip-link { background: var(--joya-paper); left: 1rem; padding: .65rem 1rem; position: fixed; top: -5rem; z-index: 20; }
+.wao-the-joya__skip-link:focus { top: 1rem; }
+.wao-the-joya__demo-banner { align-items: center; background: #221c17; color: var(--joya-canvas); display: flex; flex-direction: column; font-size: .68rem; gap: .2rem; letter-spacing: .04em; padding: .65rem 1rem; text-align: center; }
+.wao-the-joya__demo-banner strong { color: #d7b786; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; }
+.wao-the-joya__demo-banner span { color: #c9bdae; }
+.wao-the-joya__container { margin-inline: auto; max-width: 82rem; padding-inline: clamp(1.15rem, 4vw, 3.5rem); width: 100%; }
+.wao-the-joya__header { background: rgba(245, 240, 232, .94); border-bottom: 1px solid var(--joya-line); position: sticky; top: 0; z-index: 10; }
+.wao-the-joya__nav-layout { align-items: center; display: flex; gap: 1rem; justify-content: space-between; min-height: 4.5rem; }
+.wao-the-joya__wordmark { font-family: Georgia, "Times New Roman", serif; font-size: 1.2rem; line-height: .9; text-decoration: none; }
+.wao-the-joya__wordmark small { display: block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .52rem; letter-spacing: .2em; margin-top: .35rem; text-transform: uppercase; }
+.wao-the-joya__nav { display: none; gap: 1.5rem; }
+.wao-the-joya__nav a { color: var(--joya-muted); font-size: .72rem; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+.wao-the-joya__module { position: relative; }
+.wao-the-joya__section { padding-block: clamp(5rem, 12vw, 9rem); }
+.wao-the-joya__section--ink { background: var(--joya-ink); color: var(--joya-canvas); }
+.wao-the-joya__section--soft { background: var(--joya-soft); }
+.wao-the-joya__eyebrow { color: var(--joya-gold); font-size: .68rem; font-weight: 700; letter-spacing: .19em; margin-bottom: 1rem; text-transform: uppercase; }
+.wao-the-joya__lead { color: var(--joya-muted); font-size: 1.05rem; max-width: 52ch; }
+.wao-the-joya__actions { display: flex; flex-direction: column; gap: .7rem; margin-top: 1.7rem; }
+.wao-the-joya__button { align-items: center; border: 1px solid var(--joya-ink); display: inline-flex; font-size: .7rem; font-weight: 700; justify-content: center; letter-spacing: .1em; min-height: 2.9rem; padding: .75rem 1.05rem; text-decoration: none; text-transform: uppercase; transition: background-color .25s ease, border-color .25s ease, color .25s ease, transform .25s ease; }
+.wao-the-joya__button--ghost { background: transparent; }
+.wao-the-joya__button--light { border-color: var(--joya-canvas); color: var(--joya-canvas); margin-top: 1.5rem; }
+.wao-the-joya__button--disabled { cursor: not-allowed; opacity: .62; }
+.wao-the-joya__note { color: var(--joya-muted); font-size: .72rem; margin-top: 1rem; max-width: 55ch; }
+.wao-the-joya__media { align-items: center; background: linear-gradient(145deg, #ded1c0, #f1e9df); border: 1px solid rgba(170, 131, 83, .35); display: flex; flex-direction: column; justify-content: center; overflow: hidden; padding: 1.25rem; position: relative; text-align: center; }
+.wao-the-joya__media::before { border: 1px solid rgba(255,255,255,.5); content: ""; inset: .65rem; pointer-events: none; position: absolute; }
+.wao-the-joya__media img { color: transparent; height: 100%; inset: 0; object-fit: cover; position: absolute; transition: transform .55s ease; width: 100%; }
+.wao-the-joya__media-index { font-size: .58rem; left: 1.2rem; letter-spacing: .16em; position: absolute; text-transform: uppercase; top: 1.1rem; }
+.wao-the-joya__media-mark { border: 1px solid var(--joya-gold); border-radius: 50%; display: block; height: 5rem; margin-bottom: 1.2rem; position: relative; transform: rotate(45deg); width: 5rem; }
+.wao-the-joya__media-mark::after { border: 1px solid var(--joya-gold); content: ""; inset: .7rem; position: absolute; }
+.wao-the-joya__media p { font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; }
+.wao-the-joya__media small { color: var(--joya-muted); font-size: .63rem; letter-spacing: .08em; margin-top: .4rem; text-transform: uppercase; }
+.wao-the-joya__section-heading { display: grid; gap: 1.5rem; margin-bottom: 3rem; }
+.wao-the-joya__section-heading > p { color: var(--joya-muted); max-width: 45ch; }
+.wao-the-joya__footer { background: #0d0b09; color: #b9afa4; padding-block: 2.5rem; }
+.wao-the-joya__footer-grid { display: flex; flex-direction: column; gap: 1rem; }
+.wao-the-joya__footer p { font-size: .72rem; max-width: 65ch; }
+.wao-the-joya__reveal { animation: joya-reveal .7s both; animation-timeline: view(); animation-range: entry 5% cover 22%; }
+@keyframes joya-reveal { from { opacity: .35; transform: translateY(1.25rem); } to { opacity: 1; transform: translateY(0); } }
+@media (hover: hover) {
+  .wao-the-joya__nav a:hover { color: var(--joya-ink); }
+  .wao-the-joya__button:not(.wao-the-joya__button--disabled):hover { background: var(--joya-ink); color: var(--joya-canvas); transform: translateY(-2px); }
+}
+@media (min-width: 48rem) {
+  .wao-the-joya__nav { display: flex; }
+  .wao-the-joya__actions { flex-direction: row; flex-wrap: wrap; }
+  .wao-the-joya__section-heading { align-items: end; grid-template-columns: 1.3fr .7fr; }
+  .wao-the-joya__footer-grid { align-items: center; flex-direction: row; justify-content: space-between; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wao-the-joya *, .wao-the-joya *::before, .wao-the-joya *::after { animation: none; scroll-behavior: auto; transition-duration: .01ms; }
+}
+.wao-the-joya__hero { min-height: calc(100svh - 4.5rem); padding-block: clamp(3rem, 8vw, 7rem); }
+.wao-the-joya__hero-grid { align-items: center; display: grid; gap: 2.5rem; }
+.wao-the-joya__hero-copy { position: relative; z-index: 1; }
+.wao-the-joya__hero-copy .wao-the-joya__lead { margin-top: 1.25rem; }
+.wao-the-joya__media--hero { aspect-ratio: 4 / 5; box-shadow: 0 1.5rem 5rem var(--joya-glow); min-height: 27rem; }
+@media (min-width: 64rem) { .wao-the-joya__hero-grid { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(3rem, 8vw, 8rem); } }
+.wao-the-joya__products { display: grid; gap: 1.25rem; }
+.wao-the-joya__product { background: var(--joya-paper); border: 1px solid var(--joya-line); box-shadow: 0 .5rem 2rem rgba(23,19,15,.04); overflow: hidden; transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease; }
+.wao-the-joya__media--product { aspect-ratio: 4 / 4.6; transition: transform .55s ease; }
+.wao-the-joya__media--warm { background: linear-gradient(145deg, #d9c1a7, #f2e5d5); }
+.wao-the-joya__media--dark { background: linear-gradient(145deg, #383029, #99836e); color: var(--joya-canvas); }
+.wao-the-joya__media--dark small { color: #ded4ca; }
+.wao-the-joya__product-copy { padding: 1.25rem; }
+.wao-the-joya__product-copy > p:not(.wao-the-joya__eyebrow) { color: var(--joya-muted); margin-top: .65rem; }
+.wao-the-joya__product dl { border-top: 1px solid var(--joya-line); margin-top: 1.1rem; padding-top: .6rem; }
+.wao-the-joya__product dl div { display: flex; font-size: .7rem; justify-content: space-between; padding-top: .45rem; }
+.wao-the-joya__product dd { color: var(--joya-muted); }
+.wao-the-joya__status { border-top: 1px solid var(--joya-line); color: var(--joya-muted); display: block; font-size: .62rem; letter-spacing: .07em; margin-top: 1rem; padding-top: .8rem; text-transform: uppercase; }
+@media (hover: hover) { .wao-the-joya__product:hover { border-color: rgba(170,131,83,.65); box-shadow: 0 1.2rem 3rem var(--joya-glow); transform: translateY(-4px); } .wao-the-joya__product:hover .wao-the-joya__media--product { transform: scale(1.018); } }
+@media (min-width: 44rem) { .wao-the-joya__products { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+.wao-the-joya__story-grid { display: grid; gap: 3rem; }
+.wao-the-joya__media--story { aspect-ratio: 4 / 5; background: linear-gradient(155deg, #50463d, #1f1a16); color: var(--joya-canvas); }
+.wao-the-joya__media--story small { color: #c9bdae; }
+.wao-the-joya__story-copy { align-self: center; }
+.wao-the-joya__story-copy > p:not(.wao-the-joya__eyebrow) { color: #c9bdae; margin-top: 1.2rem; max-width: 55ch; }
+.wao-the-joya__story-copy blockquote { border-left: 1px solid var(--joya-gold); color: #e9ded1; font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; margin-top: 2rem; padding-left: 1.25rem; }
+.wao-the-joya__story-facts { border-top: 1px solid rgba(255,255,255,.2); margin-top: 2rem; }
+.wao-the-joya__story-facts p { border-bottom: 1px solid rgba(255,255,255,.15); color: #c9bdae; font-size: .72rem; padding-block: .8rem; }
+.wao-the-joya__story-facts span { color: var(--joya-gold); display: inline-block; font-family: ui-monospace, monospace; margin-right: 1rem; }
+@media (min-width: 64rem) { .wao-the-joya__story-grid { grid-template-columns: minmax(20rem,.8fr) minmax(0,1.2fr); gap: clamp(4rem,10vw,10rem); } }
+.wao-the-joya__steps { display: grid; gap: 1.25rem; list-style: none; margin: 0; padding: 0; }
+.wao-the-joya__steps li { border-top: 1px solid var(--joya-line); padding-top: 1rem; }
+.wao-the-joya__steps span { color: var(--joya-gold); display: block; font-family: ui-monospace, monospace; font-size: .7rem; margin-bottom: 2.5rem; }
+.wao-the-joya__steps p { color: var(--joya-muted); font-size: .88rem; margin-top: .6rem; }
+.wao-the-joya__process-note { align-items: flex-start; border: 1px solid var(--joya-line); display: flex; flex-direction: column; gap: 1.2rem; margin-top: 3rem; padding: 1.25rem; }
+.wao-the-joya__process-note p { color: var(--joya-muted); font-size: .76rem; max-width: 65ch; }
+@media (min-width: 48rem) { .wao-the-joya__steps { grid-template-columns: repeat(3,minmax(0,1fr)); } .wao-the-joya__process-note { align-items: center; flex-direction: row; justify-content: space-between; } }
+.wao-the-joya__faq-grid { display: grid; gap: 2.5rem; }
+.wao-the-joya__faq-grid > div:first-child > p:last-child { color: var(--joya-muted); margin-top: 1rem; max-width: 45ch; }
+.wao-the-joya__faq-list { border-top: 1px solid var(--joya-line); }
+.wao-the-joya__faq-list details { border-bottom: 1px solid var(--joya-line); padding-block: 1.15rem; }
+.wao-the-joya__faq-list summary { cursor: pointer; font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; padding-right: 2rem; }
+.wao-the-joya__faq-list details[open] summary { color: var(--joya-gold); }
+.wao-the-joya__faq-list p { color: var(--joya-muted); font-size: .86rem; margin-top: .8rem; max-width: 58ch; }
+@media (min-width: 64rem) { .wao-the-joya__faq-grid { grid-template-columns: minmax(18rem,.7fr) minmax(0,1.3fr); gap: clamp(4rem,10vw,10rem); } }
+.wao-the-joya__final { background: #0d0b09; color: var(--joya-canvas); padding-block: clamp(5rem,12vw,9rem); }
+.wao-the-joya__final-grid { align-items: center; display: grid; gap: 3rem; }
+.wao-the-joya__final-grid > div:first-child > p:not(.wao-the-joya__eyebrow) { color: #b9afa4; margin-top: 1rem; max-width: 52ch; }
+.wao-the-joya__media--final { aspect-ratio: 16 / 10; background: linear-gradient(145deg, #28211b, #55483d); color: var(--joya-canvas); }
+.wao-the-joya__media--final small { color: #d0c4b8; }
+@media (min-width: 64rem) { .wao-the-joya__final-grid { grid-template-columns: minmax(0,1fr) minmax(24rem,.8fr); gap: clamp(4rem,9vw,9rem); } }
