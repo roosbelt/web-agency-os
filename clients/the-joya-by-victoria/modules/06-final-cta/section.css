@@ -1,0 +1,6 @@
+.wao-the-joya__final { background: #0d0b09; color: var(--joya-canvas); padding-block: clamp(5rem,12vw,9rem); }
+.wao-the-joya__final-grid { align-items: center; display: grid; gap: 3rem; }
+.wao-the-joya__final-grid > div:first-child > p:not(.wao-the-joya__eyebrow) { color: #b9afa4; margin-top: 1rem; max-width: 52ch; }
+.wao-the-joya__media--final { aspect-ratio: 16 / 10; background: linear-gradient(145deg, #28211b, #55483d); color: var(--joya-canvas); }
+.wao-the-joya__media--final small { color: #d0c4b8; }
+@media (min-width: 64rem) { .wao-the-joya__final-grid { grid-template-columns: minmax(0,1fr) minmax(24rem,.8fr); gap: clamp(4rem,9vw,9rem); } }
