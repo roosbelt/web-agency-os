@@ -1,0 +1,7 @@
+.wao-the-joya__steps { display: grid; gap: 1.25rem; list-style: none; margin: 0; padding: 0; }
+.wao-the-joya__steps li { border-top: 1px solid var(--joya-line); padding-top: 1rem; }
+.wao-the-joya__steps span { color: var(--joya-gold); display: block; font-family: ui-monospace, monospace; font-size: .7rem; margin-bottom: 2.5rem; }
+.wao-the-joya__steps p { color: var(--joya-muted); font-size: .88rem; margin-top: .6rem; }
+.wao-the-joya__process-note { align-items: flex-start; border: 1px solid var(--joya-line); display: flex; flex-direction: column; gap: 1.2rem; margin-top: 3rem; padding: 1.25rem; }
+.wao-the-joya__process-note p { color: var(--joya-muted); font-size: .76rem; max-width: 65ch; }
+@media (min-width: 48rem) { .wao-the-joya__steps { grid-template-columns: repeat(3,minmax(0,1fr)); } .wao-the-joya__process-note { align-items: center; flex-direction: row; justify-content: space-between; } }

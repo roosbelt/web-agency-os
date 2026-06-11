@@ -1,0 +1,45 @@
+/* The Joya by Victoria · estilos copy-ready: 05-faq
+   Pegar junto al HTML del mismo nombre. Todos los selectores están encapsulados. */
+.wao-the-joya {--joya-ink: #17130f;
+  --joya-muted: #71685f;
+  --joya-canvas: #f5f0e8;
+  --joya-paper: #fffdf9;
+  --joya-soft: #ebe2d7;
+  --joya-gold: #aa8353;
+  --joya-line: rgba(23, 19, 15, .16);
+  --joya-glow: rgba(190, 145, 88, .22);
+  background: var(--joya-canvas);
+  color: var(--joya-ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow: hidden;}
+.wao-the-joya *, .wao-the-joya *::before, .wao-the-joya *::after {box-sizing: border-box;}
+.wao-the-joya h1, .wao-the-joya h2, .wao-the-joya h3, .wao-the-joya p, .wao-the-joya blockquote, .wao-the-joya dl, .wao-the-joya dd {margin: 0;}
+.wao-the-joya h1, .wao-the-joya h2, .wao-the-joya h3 {font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-height: 1.05;}
+.wao-the-joya h1 {font-size: clamp(2.8rem, 10vw, 6.6rem); letter-spacing: -.06em; max-width: 12ch;}
+.wao-the-joya h2 {font-size: clamp(2.2rem, 7vw, 4.7rem); letter-spacing: -.05em; max-width: 13ch;}
+.wao-the-joya h3 {font-size: 1.45rem;}
+.wao-the-joya a {color: inherit;}
+.wao-the-joya a:focus-visible, .wao-the-joya summary:focus-visible {outline: 2px solid var(--joya-gold); outline-offset: 4px;}
+.wao-the-joya__container {margin-inline: auto; max-width: 82rem; padding-inline: clamp(1.15rem, 4vw, 3.5rem); width: 100%;}
+.wao-the-joya__module {position: relative;}
+.wao-the-joya__section {padding-block: clamp(5rem, 12vw, 9rem);}
+.wao-the-joya__section--soft {background: var(--joya-soft);}
+.wao-the-joya__eyebrow {color: var(--joya-gold); font-size: .68rem; font-weight: 700; letter-spacing: .19em; margin-bottom: 1rem; text-transform: uppercase;}
+.wao-the-joya__reveal {animation: joya-reveal .7s both; animation-timeline: view(); animation-range: entry 5% cover 22%;}
+@keyframes joya-reveal { from { opacity: .35; transform: translateY(1.25rem); } to { opacity: 1; transform: translateY(0); } }
+.wao-the-joya__faq-grid {display: grid; gap: 2.5rem;}
+.wao-the-joya__faq-grid > div:first-child > p:last-child {color: var(--joya-muted); margin-top: 1rem; max-width: 45ch;}
+.wao-the-joya__faq-list {border-top: 1px solid var(--joya-line);}
+.wao-the-joya__faq-list details {border-bottom: 1px solid var(--joya-line); padding-block: 1.15rem;}
+.wao-the-joya__faq-list summary {cursor: pointer; font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; padding-right: 2rem;}
+.wao-the-joya__faq-list details[open] summary {color: var(--joya-gold);}
+.wao-the-joya__faq-list p {color: var(--joya-muted); font-size: .86rem; margin-top: .8rem; max-width: 58ch;}
+@media (min-width: 64rem) {
+.wao-the-joya__faq-grid {grid-template-columns: minmax(18rem,.7fr) minmax(0,1.3fr); gap: clamp(4rem,10vw,10rem);}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.wao-the-joya *, .wao-the-joya *::before, .wao-the-joya *::after {animation: none; scroll-behavior: auto; transition-duration: .01ms;}
+}
