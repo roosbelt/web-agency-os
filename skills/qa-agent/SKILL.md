@@ -19,6 +19,9 @@ Puntuar cobertura 25, reproducibilidad 20, exactitud de severidad 20, accesibili
 ## Revisión cruzada y puerta
 Creative Director revisa experiencia, claridad y diferenciación además del score técnico. QA bloquea publicación ante claims no demostrados, CTA roto, imágenes sin permiso, datos/políticas críticas ausentes, accesibilidad grave o implementación no portable.
 
+## One-Command Generation Mode
+Cuando se use el playbook 00, verificar que existe y está sincronizado todo el inventario obligatorio: brief, research, strategy, copy, referencias, assets/image map, módulos/manifest, ensamblado HTML/CSS, preview, exports/README, exports por módulo/full-page, reportes de agentes/readiness/Creative Director, QA, instrucciones WordPress y `generation-report.md`. Un archivo ausente, vacío o desincronizado se registra como warning o blocker según su impacto; QA también confirma que el diff está limitado a la carpeta del cliente.
+
 ## Industry lens
 Incluir una revisión contra criterios Client-ready y Publish-ready del playbook primario. Tratar como bloqueador cualquier requisito crítico del rubro ausente, no demostrado, regulado o no operativo.
 

@@ -18,6 +18,38 @@ Cada proyecto avanza en orden por disciplinas especializadas y una revisión cre
 
 Las reglas generales viven en [`AGENTS.md`](AGENTS.md), los procesos en [`playbooks/`](playbooks/), las instrucciones de especialistas en [`skills/`](skills/) y los formatos reutilizables en [`templates/`](templates/).
 
+## How to generate a client website with one prompt
+
+Para solicitar una web completa, usa One-Command Generation Mode. Codex seguirá [`playbooks/00-one-command-client-generation.md`](playbooks/00-one-command-client-generation.md), creará una rama limpia, ejecutará todos los agentes y producirá módulos, preview, exports, QA, scorecards e instrucciones dentro de una sola carpeta de cliente.
+
+Ejemplo mínimo:
+
+```text
+Crea una web completa en One-Command Generation Mode.
+client_name: Acme Studio
+client_slug: acme-studio
+industry: Professional services
+business_goal: generar consultas calificadas
+target_audience: pequeñas empresas que necesitan dirección de marca
+offer/products/services: estrategia de marca y diseño web
+brand_style: sobrio, claro y editorial
+tone_of_voice: experto y cercano
+primary_cta: Solicitar consulta
+secondary_cta: Ver servicios
+must_include: proceso, servicios y preguntas frecuentes
+must_avoid: claims de resultados no demostrados
+competitors_or_references: [POR CONFIRMAR]
+image_urls: [POR CONFIRMAR]
+whatsapp: [POR CONFIRMAR]
+instagram: [POR CONFIRMAR]
+commercial_data: [POR CONFIRMAR]
+legal_or_policy_notes: [POR CONFIRMAR]
+language: español
+wordpress_goal: landing modular lista para WordPress
+```
+
+Puedes copiar [`templates/one-command-client-brief-template.md`](templates/one-command-client-brief-template.md) para un brief completo. Al finalizar, consulta `generation-report.md` para ver inputs, agentes ejecutados, archivos, scores, blockers y próximas acciones. El modo one-command produce el máximo estado seguro: nunca convierte automáticamente datos ausentes en `Publish-ready`.
+
 ## Uso para un cliente
 
 1. Duplica `clients/example-luxury-jewelry/` como `clients/<slug-del-cliente>/` o crea la carpeta desde las plantillas.

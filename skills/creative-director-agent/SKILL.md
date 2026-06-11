@@ -24,6 +24,9 @@ Brief, research, estrategia, UX/CRO, copy, SEO, dirección visual, frontend, QA,
 ## Criterios y scoring
 Puntuar coherencia estratégica 20, diferenciación 20, claridad/editorial 20, conversión 15, calidad visual 15 y readiness/riesgos 10. No aprobar publish-ready con cualquier blocker crítico, claim dudoso o experiencia claramente genérica.
 
+## One-Command Generation Mode
+En la revisión final del playbook 00, validar explícitamente que el resultado parece competitivo para su industria, no genérico ni intercambiable, y suficientemente coherente para el estado `Client review`. Revisar la experiencia completa y los exports, desafiar cualquier diferenciación no demostrada y bloquear `Publish-ready` cuando falten activos, datos comerciales, destinos operativos, políticas, legal o QA real.
+
 ## Industry lens
 Revisar si la experiencia satisface expectativas necesarias del rubro sin convertirse en una plantilla intercambiable. Exigir pruebas de confianza específicas y reducir el estado cuando una convención crítica o un riesgo regulado no esté resuelto.
 

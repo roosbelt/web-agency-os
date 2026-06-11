@@ -20,6 +20,18 @@ Flujo obligatorio: `Research → Brand → UX/CRO → Copy → SEO → Visual �
 
 Cada agente debe usar `templates/agent-output-template.md`, cumplir su output fijo, declarar score con evidencia y aceptar revisión cruzada. Seguir `playbooks/11-agent-performance-system.md` y `playbooks/12-client-readiness-scorecard.md`. No avanzar si faltan datos críticos incompatibles con la siguiente etapa; indicar bloqueo, riesgo, propietario y trabajo seguro que sí puede continuar.
 
+## One-Command Generation Mode
+Cuando el usuario pida crear una web completa para un cliente, Codex debe usar `playbooks/00-one-command-client-generation.md` como orquestador y ejecutar el flujo completo sin omitir puertas de calidad.
+
+- Actualizar `origin/main` y crear una rama limpia específica para el cliente.
+- Modificar únicamente `clients/<client_slug>/`; no tocar dashboard ni sistema base durante la generación.
+- Ejecutar en orden `Research → Brand → UX/CRO → Copy → SEO → Visual → WordPress Frontend → QA → Creative Director Review`.
+- Generar todos los entregables obligatorios, módulos, preview, exports copy-ready, reportes, scorecards e instrucciones definidos por el playbook 00.
+- Mantener hechos, supuestos, blockers y readiness separados. Continuar con fallbacks seguros cuando sea posible, pero no inventar para completar archivos.
+- No avanzar a `Publish-ready` si faltan fotos reales/aprobadas, precios o datos comerciales aplicables, WhatsApp/destino operativo, políticas o información legal crítica.
+- QA debe validar el inventario one-command y Creative Director debe confirmar competitividad, diferenciación y estado final honesto.
+- Antes del commit, confirmar que el diff contiene solo la carpeta del cliente; entregar un commit y pull request limpios con pruebas, blockers y siguientes acciones.
+
 ## Agentes especialistas
 - **Market Research Agent:** mercado, audiencia, competidores y evidencia.
 - **Brand Strategist Agent:** posicionamiento, propuesta de valor y mensajes.
