@@ -47,3 +47,42 @@
 4. Aprobar proceso comercial, pagos, envíos, cambios y devoluciones.
 5. Añadir contenido legal, mercado, moneda y configuración SEO final.
 6. Ejecutar QA final en el WordPress y tema reales.
+
+## Agent Performance System y readiness
+
+La evaluación detallada está disponible en:
+
+- `agent-performance-report.md`: rendimiento por agente, handoffs y bloqueadores.
+- `client-readiness-scorecard.md`: puntajes por dimensión y puertas de calidad.
+- `final-creative-review.md`: revisión editorial y decisión final del Creative Director.
+
+### Resumen de scores
+
+| Dimensión | Score | Nivel |
+|---|---:|---|
+| Research quality | 82 | Client review ready |
+| Brand strategy | 66 | Usable draft |
+| UX/CRO | 78 | Client review ready |
+| Copywriting | 73 | Client review ready |
+| SEO | 55 | Usable draft |
+| Visual direction | 80 | Client review ready |
+| WordPress implementation | 88 | Publish-ready quality técnica |
+| Accessibility | 84 | Client review ready |
+| Image readiness | 45 | Usable draft |
+| Commercial data readiness | 20 | Weak |
+| Legal/policies readiness | 10 | Weak |
+| Client readiness | 76 | Client review ready |
+| Publish readiness | 28 | Weak / bloqueado |
+
+**Promedio simple: 60/100 — usable draft.** Este promedio no invalida la aprobación para presentar el prototipo en estado Client review ni permite publicación. La calidad técnica WordPress no compensa la falta de imágenes, datos comerciales, políticas y validación legal.
+
+### Decisión por estado
+
+| Estado | Decisión |
+|---|---|
+| Internal draft | Superado |
+| Client review | Aprobado |
+| WordPress-ready | Aprobado técnicamente; pendiente prueba en WordPress real |
+| Publish-ready | **Bloqueado** |
+
+La revisión final debe repetirse con fotos autorizadas, catálogo, WhatsApp, precios, políticas, datos comerciales y configuración SEO definitivos.
